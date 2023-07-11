@@ -1,0 +1,169 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: roboto;
+  background: rgb(28, 28, 138);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+img {
+  height: auto;
+}
+
+/* CONTAINER */
+#form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  margin: 2rem 10rem 0 10rem;
+  transition: all 0.3s ease-in-out;
+}
+#form-container #mobile-img {
+  display: none;
+}
+#form-container #main {
+  padding: 4rem;
+}
+#form-container #main h1 {
+  font-size: 3rem;
+  margin: 1rem;
+  color: rgb(28, 28, 138);
+}
+#form-container #main h2 {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: rgb(28, 28, 138);
+}
+#form-container #main ul {
+  margin: 1rem 0 1rem 0;
+}
+#form-container #main ul a {
+  text-decoration: none;
+}
+#form-container #main ul a li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0 0.75rem 0;
+}
+#form-container #main .form {
+  display: flex;
+  flex-direction: column;
+}
+#form-container #main .form > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#form-container #main .form > div h3 {
+  color: rgb(28, 28, 138);
+  font-size: 1rem;
+  margin: 0.5rem 0 0 0;
+}
+#form-container #main .form > div h4 {
+  color: rgb(255, 0, 0);
+  font-size: 0.75rem;
+  margin: 0.5rem 0 0 0;
+  display: none;
+}
+#form-container #main .form input {
+  margin: 0.5rem 0 0.5rem 0;
+  height: 2.5rem;
+}
+#form-container #main .form button {
+  background: rgb(28, 28, 138);
+  color: white;
+  font-family: roboto;
+  font-weight: 400;
+  padding: 0.75rem;
+  margin: 0.5rem 0 0.5rem 0;
+  cursor: pointer;
+}
+#form-container #side {
+  padding: 1rem;
+}
+#form-container #side #desktop-img {
+  display: block;
+}
+#form-container #side #mobile-img {
+  display: none;
+}
+
+/* SUCCESS FORM */
+#success-form {
+  background: white;
+  border-radius: 20px;
+  height: 25rem;
+  width: 25rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+#success-form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 3rem;
+}
+#success-form > div svg {
+  height: 4rem;
+  width: 4rem;
+  padding: 0.5rem;
+}
+#success-form > div h1 {
+  padding: 0.5rem;
+}
+#success-form > div p {
+  padding: 0.5rem;
+}
+#success-form > div button {
+  background: rgb(28, 28, 138);
+  padding: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 1024px) {
+  #form-container {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+}
+.attribution {
+  font-size: 1.5rem;
+  color: white;
+}
+.attribution a {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: white;
+}/*# sourceMappingURL=index.css.map */
